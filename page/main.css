@@ -1,0 +1,46 @@
+.logo{
+    width: 20vw;
+    fill: white;
+    filter: drop-shadow(rgb(255,255,225) 0px 0px);
+}
+.icon {
+    width: 20vw;
+    height: 4.5vw;
+    display: inline-block;
+    -webkit-mask: url(image/logo.svg) no-repeat;
+    mask: url(image/logo.svg) no-repeat;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+.wrap {
+    width: 100%;
+    text-align: center;
+}
+.icon-red { background-color: white; }
+.container_index{
+    margin-top: 40vh;
+    text-align: center;
+}
+.input-form{
+    margin-top: 5vh;
+    text-align: center;
+    justify-content: center;
+}
+.input-box{
+    margin-right: 2vw;
+    width: 100%;
+}
+.search-button {
+    color: black;
+}
+.container_result{
+    margin-top:5vh;
+}
+.input-form2{
+    float: right;
+    margin-right: 20vw;
+    margin-top: 3vh;
+}
+.result{
+
+}

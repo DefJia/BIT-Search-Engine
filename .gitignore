@@ -1,0 +1,7 @@
+*.db
+test.*
+*.ini
+data/*
+.idea/*
+page/.idea/*
+
