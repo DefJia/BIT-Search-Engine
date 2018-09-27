@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="main.css">
     <style>
         body{
-            background: url("image/bg.jpg") no-repeat;
+            background: url("image/bg1.png") no-repeat;
             background-size:cover;
         }
     </style>
