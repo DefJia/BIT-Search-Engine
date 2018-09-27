@@ -4,4 +4,5 @@ test.*
 data/*
 .idea/*
 page/.idea/*
+data/bg.jpg
 
