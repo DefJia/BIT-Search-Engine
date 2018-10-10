@@ -35,12 +35,16 @@
 }
 .container_result{
     margin-top:5vh;
+    margin-bottom: 5vh;
 }
 .input-form2{
     float: right;
-    margin-right: 20vw;
+    margin-right: 10vw;
     margin-top: 3vh;
 }
 .result{
 
+}
+.result a{
+    font-size: larger;
 }

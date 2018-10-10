@@ -32,7 +32,7 @@
 </div>
 <div class="footer" style="position: absolute;width: 100%;text-align: center;bottom:2vh">
     <hr color=#ccc width=61.8% style="text-align: center"/>
-    <h6 style="color: white">Copyright © 2018 <a href='http://blog.defjia.top' style="color: white">DefJia</a>. All rights reserved. </h6>
+    <h6 style="color: white">Copyright © 2018 <a href='https://github.com/DefJia' style="color: white">DefJia</a>. All rights reserved. </h6>
 </div>
 </body>
 </html>
