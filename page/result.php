@@ -35,6 +35,16 @@
             <h6>http://www.bit.edu.cn</h6>
             <p>【转载】奋力开创新时代教育工作新局面 北理工创新项目获首届中俄（工业）创新大赛二等奖  北理工举办2018年“一带一路”与国际化人才培养... 北理工成功举办国家自然科学基金仪器类项目交流会 北理工黄佳琦特别研究</p>
         </li>
+        <?php
+            $cur = new Crawl();
+            $cur->keyword = $content;
+            $res = $cur->extract();
+            for($i = 0; $i < 10; $i++) {
+                $e = $res[$i];
+                $li = sprintf('<li class="result"><a href="%s">%s</a><h6>%s</h6><p>%s</p></li>', $e['a'], $e['title'], $e['a'], $e['p']);
+                echo $li;
+            }
+        ?>
     </ul>
 </div>
 
