@@ -15,21 +15,34 @@ class Crawl{
 
     function get(){
         $url = sprintf('http://www.bit.edu.cn/cms/search/searchResults.jsp?date=&query=%s&offset=0&sortField=publishDate&order=1', $this->keyword);
-        $url = 'http://www.bitren.com';
-        $html = file_get_html($url);
+	    $html = file_get_html($url);
         return $html;
     }
 
     function extract(){
-        $html = $this->get();
-        foreach($html->find('a') as $element)
-            echo $element->src . '<br>';
+	    $html = $this->get();
+	    $res = $html->find('.con03')[0];
+		$as = $res->find('a');
+	    $cur = array();
+	    $i = 0;
+	    foreach ($as as $a){
+		    $cur[$i] = array('a'=>$a->href);
+		    $cur[$i]['title'] = $a->plaintext;
+		$i ++;
+	    }
+	    $ps = $res->find('p');
+	    $i = 0;
+	    foreach($ps as $p){
+		    $cur[$i]['p'] = $p->plaintext;
+		    $i++;
+	    }
+	    return $cur;
     }
 }
-
+/*
 $cur = new Crawl();
 $cur->keyword = 's';
 # $cur->extract();
 $url = 'http://www.bitren.com';
 $html = file_get_html($url);
-var_dump($html);
+ */
